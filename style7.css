@@ -1,0 +1,174 @@
+.full5{
+    background-image: url(img/bg.jpg);   
+    }
+    .container7{
+        max-width: 1200px;
+        margin: auto;
+        padding-bottom: 100px;
+    }
+    .container7 .para7{
+        max-width: 700px;
+        width: 90%;
+        display: block;
+        text-align: center;
+        margin: auto;
+        color: white;
+    }
+    .para7 h2{
+        padding-top: 100px;
+        font-size: 35px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+    }
+    .para7 .bar{
+        border:none;
+        background: rgb(78, 77, 77);
+        height: 2px;
+        width: 50px;
+        margin: auto;
+    }
+    .para7 p{
+        font-size: 16px;
+        padding: 10px 0px;
+        padding-bottom: 50px;
+    }
+    .glass {
+           /* max-height: 500px; */
+           max-width: 500px;
+           padding: 0px 10px;
+            background: linear-gradient(
+              to right bottom,
+              rgba(255, 255, 255, 0),
+              rgba(255, 255, 255, 0)
+            );
+            border-radius: 2rem;
+            z-index: 1;
+            backdrop-filter: blur(12px);
+           display: flex;
+           margin: auto;
+           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          }
+        .contact{
+            padding: 25px 40px 10px 40px;
+            max-width: 500px;
+            max-height: 400px;
+        }
+        .contact .text{
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+           color: white;
+           
+        }
+        .contact form{
+            padding: 30px 0 0 0 0;
+        }
+        .contact form .form-row{
+            display: flex;
+            margin: 32px 0px;
+        }
+        form .form-row .input-data{
+            width: 100%;
+            height: 40px;
+            margin:0 20px;
+            position: relative;
+        }
+        form .form-row .textarea{
+            height: 60px;
+        }
+        .textarea textarea{
+            resize: none;
+            padding-top: 10px;
+        }
+        .input-data input,
+        .textarea textarea{
+            display: block;
+            height: 100%;
+            width: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+            background: transparent;
+            outline: none;
+        }
+        .input-data input:focus~label,
+        .textarea textarea:focus~label,
+        .input-data input:valid~label,
+        .textarea textarea:valid~label{
+            
+            transform: translateY(-20px);
+            color: rgb(71, 238, 154);
+            font-size: 14px;
+        }
+        .input-data label{
+            position: absolute;
+            bottom: 10px;
+            font-size: 16px;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        .textarea label{
+            width: 100%;
+            bottom: 40px;
+
+        }
+        .input-data .underline{
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+        }
+        .input-data .underline:before,
+        .input-data .underline:after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: rgb(71, 238, 154);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+        }
+        .input-data input:focus ~ .underline:before, .underline:after,
+        .textarea textarea:focus ~ .underline:before, .underline:after,
+        .input-data input:valid ~ .underline:before, .underline:after,
+        .textarea textarea:valid ~ .underline:before, .underline:after{
+            transform: scaleX(1);
+            
+        }
+        .submit-btn input{
+            padding: 10px 20px;
+            border-radius: 20px;
+           border: 2px solid rgb(74, 82, 158);
+           background: transparent;
+           color: white;
+           text-transform: uppercase;
+           transition: all 0.2s ease-in-out;
+        }
+      .submit-btn{
+          display:flex;
+          justify-content: center;
+          text-decoration: none;
+      }
+      .submit-btn input:hover{
+          background: rgb(74, 82, 158);
+          border: none;
+      }
+      @media only screen and (max-width:558px){
+          .glass{
+              margin: 0px 10px;
+              height: 500px;
+          }
+          .contact{
+            padding: 0px;
+            max-width: 500px;
+            max-height: 400px;
+
+          }
+          .contact form .form-row{
+            display: block;
+            margin: 32px 0px;
+        }
+      }
